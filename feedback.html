@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Feedback | Knull-Sensi</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen 
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-text">LOADING PLAYER FEEDBACK...</h2>
+        </div>
+    </div>-->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo" id="logo">KNULL-SENSI</div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">DEVELOPERS</a>
+                <a href="#" class="nav-link contact-link">CONTACT</a>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="feedback-hero">
+        <div class="feedback-hero-content">
+            <h1 class="feedback-title">PLAYER <span class="feedback-highlight">FEEDBACK</span></h1>            <p class="feedback-subtitle">See how our optimization packs transform gameplay</p>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="happy-players">0</div>
+                    <div class="stat-label">Happy Players</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="matches-won">0</div>
+                    <div class="stat-label">Matches Won</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="headshot-rate">0%</div>
+                    <div class="stat-label">Avg. Headshot Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials -->
+    <section class="video-testimonials">
+        <h2 class="section-title">GAMEPLAY <span>VIDEOS</span></h2>
+        <p class="section-subtitle">From players using our Precision Packs</p>
+        
+        <div class="video-grid">
+            <!-- Video 1 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>PRO Player Gameplay</h3>
+                    <div class="player-info">
+                        <span class="player-name">GhostFF</span>
+                        <span class="player-rank">Heroic Tier</span>
+                    </div>
+                    <div class="video-stats">
+                        <span><i class="fas fa-skull"></i> 15 Kills</span>
+                        <span><i class="fas fa-trophy"></i> Booyah!</span>
+                    </div>
+                    <p>"The sensitivity settings completely changed my gameplay. My drag shots are now perfect!"</p>
+                </div>
+            </div>
+            
+            <!-- Video 2 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Solo vs Squad Wipe</h3>
+                    <div class="player-info">
+                        <span class="player-name">SensiGod</span>
+                        <span class="player-rank">Grandmaster</span>
+                    </div>
+                    <div class="video-stats">
+                        <span><i class="fas fa-skull"></i> 12 Kills</span>
+                        <span><i class="fas fa-headshot"></i> 78% HS Rate</span>
+                    </div>
+                    <p>"The optimization files gave me +20 FPS on my low-end device. Game changer!"</p>
+                </div>
+            </div>
+            
+            <!-- Video 3 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Tournament Highlights</h3>
+                    <div class="player-info">
+                        <span class="player-name">TourneyKing</span>
+                        <span class="player-rank">Esports Player</span>
+                    </div>
+                    <div class="video-stats">
+                        <span><i class="fas fa-skull"></i> 18 Kills</span>
+                        <span><i class="fas fa-bolt"></i> 0% Lag</span>
+                    </div>
+                    <p>"Using Knull-Sensi configs in official tournaments. Never been more consistent."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Written Testimonials -->
+    <section class="written-testimonials">
+        <h2 class="section-title">PLAYER <span>REVIEWS</span></h2>
+        <p class="section-subtitle">What our users say about our products</p>
+        
+        <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="player-avatar">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZjQ3NTciLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjM1IiByPSIyMCIgZmlsbD0iIzIyMiIvPjxwYXRoIGQ9Ik01MCA3MGMxNSAwIDI1IDE1IDI1IDE1SDEyNXMyMC0xNSAzNS0xNXYtMTBIMzV2MTB6IiBmaWxsPSIjMjIyIi8+PC9zdmc+" alt="Player Avatar">
+                </div>
+                <div class="testimonial-content">
+                    <div class="player-meta">
+                        <span class="player-name">HeadshotPro</span>
+                        <span class="player-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p class="testimonial-text">"I went from Platinum to Heroic in just 2 weeks after using the Precision Pack. My headshot accuracy improved by 40%!"</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-date">3 days ago</span>
+                        <span class="testimonial-device">Using: Low-End Config</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="player-avatar">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiM0NjkzZTgiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjM1IiByPSIyMCIgZmlsbD0iIzIyMiIvPjxwYXRoIGQ9Ik01MCA3MGMxNSAwIDI1IDE1IDI1IDE1SDEyNXMyMC0xNSAzNS0xNXYtMTBIMzV2MTB6IiBmaWxsPSIjMjIyIi8+PC9zdmc+" alt="Player Avatar">
+                </div>
+                <div class="testimonial-content">
+                    <div class="player-meta">
+                        <span class="player-name">DragShotMaster</span>
+                        <span class="player-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                    </div>
+                    <p class="testimonial-text">"The drag shot optimization is insane! I can now consistently hit moving targets from 200m+. Worth every penny."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-date">1 week ago</span>
+                        <span class="testimonial-device">Using: High-End Config</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="player-avatar">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNGRjBCNDUiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjM1IiByPSIyMCIgZmlsbD0iIzIyMiIvPjxwYXRoIGQ9Ik01MCA3MGMxNSAwIDI1IDE1IDI1IDE1SDEyNXMyMC0xNSAzNS0xNXYtMTBIMzV2MTB6IiBmaWxsPSIjMjIyIi8+PC9zdmc+" alt="Player Avatar">
+                </div>
+                <div class="testimonial-content">
+                    <div class="player-meta">
+                        <span class="player-name">BooyahQueen</span>
+                        <span class="player-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p class="testimonial-text">"My K/D ratio doubled after applying the settings. The custom HUD layout makes everything so much more intuitive."</p>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-date">2 weeks ago</span>
+                        <span class="testimonial-device">Using: Mid-Range Config</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="feedback-cta">
+        <div class="cta-content">
+            <h2>READY TO ELEVATE YOUR GAMEPLAY?</h2>
+            <p>Join thousands of players who transformed their Free Fire experience</p>
+            <a href="index.html" class="cta-btn">GET OPTIMIZATION PACK NOW</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Feedback page specific scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate stats counting
+            function animateValue(id, start, end, duration) {
+                const obj = document.getElementById(id);
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const value = Math.floor(progress * (end - start) + start);
+                    obj.innerHTML = id === 'headshot-rate' ? value + '%' : value;
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+
+            // Start animations when stats are in view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateValue('happy-players', 0, 12500, 2000);
+                        animateValue('matches-won', 0, 8430, 2000);
+                        animateValue('headshot-rate', 0, 68, 2000);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {threshold: 0.5});
+
+            observer.observe(document.querySelector('.stats-container'));
+
+            // Video card hover effects
+            const videoCards = document.querySelectorAll('.video-card');
+            videoCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px)';
+                    card.style.boxShadow = '0 15px 30px rgba(255, 71, 87, 0.3)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                    card.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.2)';
+                });
+            });
+
+            // Testimonial card hover effects
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            testimonialCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'scale(1.02)';
+                    card.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.3)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'scale(1)';
+                    card.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
